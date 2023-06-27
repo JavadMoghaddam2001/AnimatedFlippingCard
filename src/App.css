@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&family=Schibsted+Grotesk&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  transition: 0.5s ease;
+
+}
+
+.dark{
+  background-color: #333;
+  transition: 0.5s ease;
+}
+
+
+.darkMode-container{
+  background-color: w;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 5px 10px;
+  border-radius: 40px;
+  border: 3px solid rgb(81, 81, 81);
+}
+
+.dark .darkMode-container{
+  border: 3px solid whitesmoke;
+}
+
+.darkMod-bar{
+  width: 80px;
+  background-color: rgb(117, 202, 236);
+  height: 35px;
+  border-radius: 40px;
+  padding: 4px;
+  position: relative;
+  transition: 0.8s ease;
+
+}
+
+.dark .darkMod-bar{
+  background-color: whitesmoke;
+  transition: 0.5s ease;
+}
+
+.darkmode-logo{
+  color: white;
+  width: 30px;
+  height: auto;
+  color: rgb(81, 81, 81);
+}
+
+.dark .darkmode-logo{
+  color: whitesmoke;
+}
+
+.barCircle{
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 5px;
+  transition: 0.5s ease;
+}
+
+.dark .barCircle{
+  background-color: #333;
+}
+
+
+.barCircle.dark{
+  left: 50px;
+}
+
+
+
+.flipCard-container{
+  background-color: transparent;
+  width: 450px;
+  height: 250px;
+}
+
+
+.flipCard{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition:0.8s ease; 
+  transform-style: preserve-3d;
+
+}
+
+
+.flipCard-clicked {
+  transform: rotateY(180deg);
+}
+
+.flipCard-front, .flipCard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flipCard-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 20px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.flipCard-back {
+  background-color: royalblue;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.dark .flipCard-back{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.person{
+  width: 100px;
+  height: auto;
+  border: 2px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+  color: black;
+}
+
+.person-job{
+  font-size: 18px;
+  letter-spacing: 0.2ch;
+}
+
+
+.message{
+  font-size: 18px;
+}
